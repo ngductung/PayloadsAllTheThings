@@ -266,6 +266,7 @@ execute spWriteStringToFile 'contents', 'C:\path\to\', 'file'
 ### XP_CMDSHELL
 
 `xp_cmdshell` is a system stored procedure in Microsoft SQL Server that allows you to run operating system commands directly from within T-SQL (Transact-SQL).
+Sử dụng dấu `'` sẽ không bị giới hạn độ dài, ngược lại khi sử dụng `"` sẽ bị giới hạn khoảng 128 ký tự
 
 ```sql
 EXEC xp_cmdshell "net user";
